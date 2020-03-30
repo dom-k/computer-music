@@ -55,7 +55,7 @@ python play_audio -f output.wav
   (**LPCM**) format.
 - **LPCM** is the method to digitally represent sampled audio signals.
 - LPCM is the standard audio code (uncompressed) format for audio CDs.
-- WAV is just a **RIFF** file with a single "WAVE" chunk which consists of two sub-channels:
+- **WAV** is just a **RIFF** file with a single "WAVE" chunk which consists of two sub-channels:
   - **fmt chunk** specifying the data format.
   - **data chunk** containing the sample data.
 - The data of a WAV file is a sequence of **frames**.
