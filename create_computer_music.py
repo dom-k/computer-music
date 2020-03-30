@@ -7,17 +7,17 @@ def get_args():
     argparser = argparse.ArgumentParser('Let your computer compose music (random noise) for you!')
     argparser.add_argument('-o', '--output', dest='output_file', default='output.wav',
                            help='specify the the output file')
-    argparser.add_argument('-f', '--framerate', dest='framerate', default=44100,
+    argparser.add_argument('-f', '--framerate', type=int, dest='framerate', default=44100,
                            help='samples per second')
-    argparser.add_argument('-n', '--nframes', dest='nframes', default=300000,
+    argparser.add_argument('-n', '--nframes', type=int, dest='nframes', default=300000,
                            help='number of frames')
-    argparser.add_argument('-c', '--channels', dest='nchannels', default=1,
+    argparser.add_argument('-c', '--channels', type=int, dest='nchannels', default=1,
                            help='number of channels')
-    argparser.add_argument('-s', '--sampwidth', dest='sampwidth', default=2,
+    argparser.add_argument('-s', '--sampwidth', type=int, dest='sampwidth', default=2,
                            help='sample width')
-    argparser.add_argument('--min', dest='min_frame', default=-20000,
+    argparser.add_argument('--min', type=int, dest='min_frame', default=-20000,
                            help='min frame range')
-    argparser.add_argument('--max', dest='max_frame', default=20000,
+    argparser.add_argument('--max', type=int, dest='max_frame', default=20000,
                            help='max frame range')
 
     return argparser.parse_args()

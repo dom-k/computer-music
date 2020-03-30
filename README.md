@@ -15,12 +15,7 @@ Let your computer compose music (random noise) for you!
 virtualenv venv
 source venv/bin/activate
 pip install -r requirements.txt
-python create-computer-music.py
-```
-
-## Help
-```shell
-python create-computer-music.py --help
+python create_computer_music.py --help
 ```
 
 ## Also interesting
