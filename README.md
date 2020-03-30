@@ -29,12 +29,6 @@ python show_signal_wave.py -f output.wav
 python play_audio.py -f output.wav
 ```
 
-## Play the wav file
-
-```shell
-python play_audio -f output.wav
-```
-
 ## Notes
 
 - **Sound** is the sequential disturbance of air molecules.
