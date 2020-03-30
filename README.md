@@ -9,13 +9,30 @@ Let your computer compose music (random noise) for you!
 - python-tk
 - virtualenv
 
-## Run
+## Build & Run
 
 ```shell
 virtualenv venv
 source venv/bin/activate
 pip install -r requirements.txt
+
+# Create computer music with
+python create_computer_music.py
+
+# Display help
 python create_computer_music.py --help
+
+# Display the signal wave (uses matplotlib.pyplot)
+python show_signal_wave.py -f output.wav
+
+# Play the WAV file.
+python play_audio.py -f output.wav
+```
+
+## Play the wav file
+
+```shell
+python play_audio -f output.wav
 ```
 
 ## Notes
